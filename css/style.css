@@ -1,0 +1,41 @@
+.image-skills {
+  max-width: 100%; }
+
+.title-services {
+  text-align: center; }
+
+.slider-logos {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px; }
+
+.slider-item {
+  max-width: 260px;
+  max-height: 160px;
+  padding-right: 60px; }
+
+.services-container-items {
+  padding-top: 50px; }
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.title-experience {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.title-contact {
+  text-align: center;
+  margin-top: 40px; }
+
+.paragraph-contact {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }

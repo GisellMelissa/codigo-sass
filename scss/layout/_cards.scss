@@ -1,0 +1,107 @@
+
+.card {
+	position: relative;
+	display: flex;
+	place-items: center;
+	overflow: hidden;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	border: solid #243A73;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	justify-content: center;
+	margin-bottom: 15px;
+	&:hover {
+		box-shadow: 2px 2px 20px #666666;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        pointer-events: none;
+        background: rgb(130, 155, 168);
+        background: linear-gradient(90deg, rgba(130, 155, 168, 1) 0%, rgba(165, 190, 204, 1) 84%);
+        transform: translateY(-50%);
+        transition: transform calc(var(--d) * 2) var(--e);
+        }
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+    transform: translateY(42%);
+    & > *:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+}
+    
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+    
+.copy {
+    line-height: 1.35;
+}
+    
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border-radius: 20px;
+    background-color: #243A73;
+    border: none;
+    &:hover {
+        background-color: #7C3E66;
+        outline: 1.5px dashed #000000;
+        outline-offset: 3px;
+    }
+}
+    
+.card:hover,
+    .card:focus-within {
+    align-items: center;
+}
+    
+.card:hover:before,
+    .card:focus-within:before {
+    transform: translateY(-4%);
+}
+    
+.card:hover:after,
+    .card:focus-within:after {
+    transform: translateY(-50%);
+}
+    
+.card:hover .content,
+    .card:focus-within .content {
+     transform: translateY(0);
+}
+    
+.card:hover .content>*:not(.title),
+    .card:focus-within .content>*:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+}
+    
+.card:focus-within:before,
+    .card:focus-within:after,
+    .card:focus-within .content,
+    .card:focus-within .content>*:not(.title) {
+    transition-duration: 0s;
+}
+    

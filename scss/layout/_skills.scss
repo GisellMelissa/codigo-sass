@@ -1,0 +1,34 @@
+progress {
+	background-color: #f3f3f3;
+	border: 0;
+	width: 100%;
+	height: 22px;
+	&::-webkit-progress-bar {
+		background-color: #e0eaf0;
+	}
+	&::-webkit-progress-value {
+		background-color: #243A73;
+	}
+	&::-moz-progress-bar {
+		background-color: #243A73;
+	}
+}
+#skills {
+	span {
+		top: -30px;
+		padding-left: 20px;
+		position: relative;
+		font-family: 'Quicksand', sans-serif;
+		color: #ffffff;
+	}
+}
+.skills-items {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+}
+.skills {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}

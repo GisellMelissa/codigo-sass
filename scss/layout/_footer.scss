@@ -1,0 +1,22 @@
+footer {
+	color: #243A73;
+	background-color: #A5BECC;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.social-media {
+	padding-right: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	img {
+		padding-right: 10px;
+		width: 25px;
+	}
+	ul {
+		display: flex;
+	}
+    p,ul{
+        margin-bottom: 0;
+    }
+}
