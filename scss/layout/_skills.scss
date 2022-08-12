@@ -14,6 +14,7 @@ progress {
 	}
 }
 #skills {
+	margin-left: 15px;
 	span {
 		top: -30px;
 		padding-left: 20px;
@@ -23,7 +24,6 @@ progress {
 	}
 }
 .skills-items {
-	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 50px;
 }
@@ -31,4 +31,7 @@ progress {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 20px;
+}
+.image-skills {
+	max-width: 100%;
 }

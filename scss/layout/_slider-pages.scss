@@ -1,5 +1,5 @@
 .slider-services {
-	background: linear-gradient(rgba(0, 29, 122, 0.70), rgba(0, 29, 112, 0.70)), url("https://cronicaglobal.elespanol.com/uploads/s1/86/70/61/5/teletrabajo.jpeg");
+	background: linear-gradient(rgba(36, 58, 115, 0.7), rgba(36, 58, 115, 0.7)), url("https://cronicaglobal.elespanol.com/uploads/s1/86/70/61/5/teletrabajo.jpeg");
 	background-size: cover;
 	margin-bottom: 50px;
 	padding: 120px;
@@ -12,7 +12,7 @@
 	color: white;
 }
 .slider-experience {
-    background-image: url("https://fonte.com.co/wp-content/uploads/2021/07/FONDO-EXPERIENCIA-scaled.jpg");
+    background: linear-gradient(rgba(36, 58, 115, 0.7), rgba(36, 58, 115, 0.7)), url(https://img.freepik.com/foto-gratis/arreglo-bloc-notas-vacio-escritorio_23-2148854582.jpg?w=2000);
     background-size: cover;
     margin-bottom: 50px;
     padding: 120px;
@@ -24,3 +24,13 @@
 	text-align: center;
 	color: #ffffff;
 }
+.title-experience {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.title-services {
+	text-align: center;
+}
+
