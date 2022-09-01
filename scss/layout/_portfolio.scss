@@ -1,0 +1,46 @@
+.title-page-portfolio {
+    text-align: center;
+    color: #ffffff;
+}
+  
+.paragraph-portfolio {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+  
+.slider-portfolio {
+    background: linear-gradient(rgba(36, 58, 115, 0.7), rgba(36, 58, 115, 0.7)), url(https://cdn.tres.pe/wp-content/uploads/2015/06/ventajas-diseno-web-responsive.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+    padding: 120px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.gallery {
+	background: #EEE;
+}
+.gallery-cell {
+	width: 40%;
+	margin-right: 15px;
+	margin-bottom: 80px;
+	&:hover {
+		.gallery-caption {
+			opacity: 1;
+		}
+	}
+}
+.gallery-img {
+	position: relative;
+}
+.gallery-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	background: #484848;
+	color: white;
+	transition: 0.5s all ease-in-out;
+	opacity: 0;
+}

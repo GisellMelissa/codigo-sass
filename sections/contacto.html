@@ -38,44 +38,100 @@
           </ul>
         </nav>
       </header>
-
-    <h1>¿Deseas que te contacte para mayor información?</h1>
-
-    <p>A través de este formulario puedes enviarme un mensaje con alguna duda u obervación. Cualquier cosa que tengas
-        para decir es bienvenida, así que no lo dudes y déjame un mensaje. ¡Estaré feliz de contestarte!</p>
-
-    <form action="#" target="_blank">
-        <fieldset>
-            <legend>Formulario de Contacto</legend>
-            <div class="divider"></div>
-
-            <label for="nombre"><b>Tu nombre completo:</b> </label>
-            <input id="nombre" type="text" name="nombre">
-            <br>
-            <div class="divider"></div>
-            <label for="correo"><b>Tu dirección de correo:</b> </label>
-            <input id="correo" type="text" name="correo"><br>
-            <div class="divider"></div>
-
-            <b>Selecciona tus intereses: </b>
-            <div class="divider"></div>
-
-            <input type="checkbox" name="tiendas">Tiendas Virtuales (e-Commerce)<br>
-            <input type="checkbox" name="landing">Páginas Web Informativas y Coorporativas<br>
-            <input type="checkbox" name="pagina">Aplicaciones Web Dinámicas<br>
-            <input type="checkbox" name="interfaces">Diseño de Interfaces<br>
-            <input type="checkbox" name="otro">Otro
-
-            <label>
-                <p>
-                    <b>Mas información del servicio deseado</b>
-                </p>
-                <textarea name="mensaje"></textarea>
-            </label>
-        </fieldset>
-        <input class="btn-submit" type="submit" value="Enviar mensaje">
-        <input class="btn-reset" type="reset" value="Comenzar de nuevo">
-    </form>
+        <section class="contact white-bg page-section-ptb">
+          <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h6>¡Sería genial saber de ti!</h6>
+                    <h2>¡Contáctame y Trabajemos Juntos!</h2>
+                    <p>Si tienes alguna pregunta puedes contactarme por los siguientes medios o dejarme tus datos por medio del formulario</p>
+                  </div>
+              </div>
+              </div>
+              <div class="touch-in white-bg">
+               <div class="row">
+               <div class="col-lg-4 col-md-4 sm-mb-30">
+                   <div class="contact-box text-center h-100">
+                      <i class="ti-map-alt theme-color">
+                        <img class="contact-icon" src="../images/mapa.png" alt="">
+                      </i>
+                      <h5 class="uppercase mt-20">Ciudad de Residencia</h5>
+                      <p class="mt-20">Pereira, Colombia</p>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-4 sm-mb-30">
+                   <div class="contact-box text-center h-100">
+                      <i class="ti-mobile theme-color">
+                      <img class="contact-icon" src="../images/llamada-telefonica (1).png" alt="">
+                    </i>
+                      <h5 class="uppercase mt-20">Chat o Llamadas</h5>
+                      <p class="mt-20"> +(57) 310 365 5197</p>
+                   </div>
+               </div>
+               <div class="col-lg-4 col-md-4 sm-mb-30">
+                   <div class="contact-box text-center h-100">
+                      <i class="ti-email theme-color">
+                      <img class="contact-icon" src="../images/email.png" alt="">
+                    </i>
+                      <h5 class="uppercase mt-20">Email Comercial</h5>
+                      <p class="mt-20">contacto@desarrollo.com</p>
+                   </div>
+                </div>
+               </div>
+            </div>
+          </section>
+          <section>
+          <form>
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <div class="double-input">
+                <div class="form-input-container">
+                  <label for="fname">Nombre</label>
+                  <input type="text" id="fname" placeholder="Alejandro" minlength="3" required>
+                </div>
+                <div class="form-input-container">
+                  <label for="lname">Apellido</label>
+                  <input type="text" id="lname" placeholder="García" required>
+                </div>
+              </div>
+              <div class="double-input">
+                <div class="form-input-container">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="alejandro01@gmail.com" required>
+                </div>
+                <div class="form-input-container">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" placeholder="123456789" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>¿Cuáles son tus intereses?</legend>
+              <div class="double-input">
+                <div class="form-input-container">
+                  <label for="hotelcity">Servicio</label>
+                  <select id="hotelcity">
+                    <option value="Warsaw">Tiendas Virtuales (e-Commerce)</option>
+                    <option value="Cracow">Proyectos Wordpress</option>
+                    <option value="Wroclaw">Páginas Web Informativas o Coorporativas</option>
+                    <option value="Poznan">Aplicaciones Web Dinámicas</option>
+                    <option value="Poznan">Diseño de Interfaces</option>
+                    <option value="Poznan">Otro</option>
+                  </select>
+                </div>
+                <div class="form-input-container">
+                  <label for="capacity">Nivel de Prioridad</label>
+                  <input type="number" id="capacity" value="1" min="1" max="10" step="1">
+                </div>
+              </div>
+              <label>Mas información del servicio deseado:</label>
+                <label>
+                  <textarea name="mensaje" class="message"></textarea>
+              </label>
+            <button class="button" type="submit">Enviar Mensaje</button>
+          </form>
+        </section>
     <footer class="footer-principal">
         <!-- Etiqueta semántica -->
     <div class="social-media">

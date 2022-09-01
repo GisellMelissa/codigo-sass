@@ -1,26 +1,134 @@
-.btn-submit {
-	border: none;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	color: #7C3E66;
-	padding: 20px;
+.contact-box.contact-box-top {
+	margin-top: -1px;
+	position: relative;
 }
-
-.btn-reset {
-	border: none;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	color: #7C3E66;
-	padding: 20px;
-}
-
-.title-contact {
-	text-align: center;
-	margin-top: 40px;
-}
-
-.paragraph-contact {
-	text-align: center;
-	margin-top: 20px;
+.touch-in {
+	margin-top: 30px;
 	margin-bottom: 40px;
+	.contact-box {
+		background-color: #ffe9e9;
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+		border: solid #243A73;
+		display: inline-block;
+		padding: 50px 20px;
+		width: 90%;
+	}
 }
+.contact-box {
+	i {
+		background: #243A73;
+		width: 80px;
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		border-radius: 8px;
+		font-size: 34px;
+		color: #ffffff;
+		display: inline-block;
+	}
+	.contact-icon {
+		display: table-cell;
+		padding-right: 20px;
+		i {
+			background: transparent;
+			line-height: normal;
+			font-size: 34px;
+			height: auto;
+			width: auto;
+		}
+	}
+	display: table-cell;
+	vertical-align: top;
+	background: none;
+}
+.contact-box.theme-bg {
+	.contact-icon {
+		i {
+			color: #ffffff !important;
+		}
+	}
+}
+.justify-content-center {
+	margin-top: 60px;
+	justify-content: center !important;
+}
+.contact-form {
+	margin: 80px;
+}
+.contact-icon {
+	width: 70px;
+}
+form {
+	max-width: 950px;
+	display: block;
+	width: 90%;
+	background-color: #ffffff;
+	padding: 25px 0;
+	margin: 40px auto;
+	color: #fff;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+fieldset {
+	border: none;
+	width: 90%;
+	margin: 10px auto;
+}
+legend {
+	margin: 30px 0 0;
+	font-size: 24px;
+	font-weight: 700;
+}
+.double-input {
+	margin: 20px auto;
+	>div {
+		float: left;
+		width: 48%;
+		margin: 0 1% 10px;
+	}
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+button[type="submit"] {
+	height: 50px;
+	width: 200px;
+	background-color: #7C3E66;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 50px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px #131313;
+	font-family: 'Quicksand', sans-serif;
+}
+input, select {
+	width: 100%;
+	color: rgb(36, 36, 36);
+	background-color: transparent;
+	border: 1px solid #a9a9a9;
+	padding: 8px;
+	height: 35px;
+	&:focus {
+		border: 1px solid #a9a9a9;
+	}
+	&:valid {
+		border: 1px solid #a9a9a9;
+	}
+}
+option {
+	color: #000;
+	background-color: #ececec;
+}
+.message {
+	height: 90px;
+	width: 100%;
+}
+
+@media (max-width: 768px){
+	.touch-in {
+	  margin-left: 50px;
+	}
+  }
